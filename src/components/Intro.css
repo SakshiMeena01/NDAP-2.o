@@ -1,0 +1,142 @@
+.intro-bg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(135deg, #372782, #e6d4ff);
+  background-attachment: fixed;
+  padding: 40px 20px;
+}
+
+.intro-hero {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  box-shadow: 0 12px 40px rgba(50, 90, 60, 0.12);
+  padding: 70px 40px 60px 40px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-hero:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(50, 90, 60, 0.18);
+}
+
+.intro-title {
+  color: #443178;
+  font-size: 3.4rem;
+  font-weight: 800;
+  margin: 0 0 18px 0;
+  letter-spacing: -1px;
+}
+
+.intro-subtitle {
+  color: #444;
+  font-size: 1.5rem;
+  margin: 18px 0 36px 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.intro-btn {
+  background: linear-gradient(135deg, #9563dc, #4b3a79);
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 16px 38px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(45, 129, 71, 0.25);
+}
+
+.intro-btn:hover {
+  background: linear-gradient(135deg, #443178, #4d17e0);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(45, 129, 71, 0.35);
+}
+
+/* Features Section */
+.features-title {
+  color: #443178;
+  font-size: 2.6rem;
+  margin: 60px 0 30px 0;
+  font-weight: 700;
+  text-align: center;
+}
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(60, 120, 70, 0.18);
+}
+
+.feature-icon {
+  font-size: 4.4rem;
+  margin-bottom: 20px;
+  color: #443178;
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  padding-bottom: 60px;
+  perspective: 1000px; /* Adds depth perspective */
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(60, 120, 70, 0.1);
+  padding: 28px 22px 20px 22px;
+  width: 330px;
+  min-height: 180px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateZ(40px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(60, 120, 70, 0.3);
+  z-index: 10;
+}
+
+/* Optional: slight rotation on hover for a more dynamic feel */
+.features-grid > .feature-card:nth-child(odd):hover {
+  transform: translateZ(30px) rotateY(10deg) scale(1.05);
+}
+
+.features-grid > .feature-card:nth-child(even):hover {
+  transform: translateZ(30px) rotateY(-10deg) scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-title {
+    font-size: 2.6rem;
+  }
+  .intro-subtitle {
+    font-size: 1.2rem;
+  }
+}

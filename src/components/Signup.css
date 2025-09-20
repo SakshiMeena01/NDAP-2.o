@@ -1,0 +1,191 @@
+.signup-background {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;        /* vertical centering */
+  justify-content: flex-start; /* left alignment */
+  box-sizing: border-box;
+  padding-left: 20vw;           /* add some space from the very edge, adjust as needed */
+}
+
+.signup-card {
+  display: flex;
+  box-shadow: 0 4px 32px #7e6db142;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 900px;           /* Increased from 830px to 900px */
+  max-width: 98vw;
+  background: #fff;
+}
+
+.signup-left, .signup-right {
+  padding: 56px 44px 56px 44px; /* Increased padding */
+}
+.signup-left {
+  background: #371d7a;
+  color: #fff;
+  flex: 1.18;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 260px;
+}
+.signup-logos {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 26px;
+}
+.niti-logo {
+  height: 60px; /* increased from 40px */
+  width: auto;  /* keep aspect ratio */
+}
+
+.ndap-logo {
+  height: 50px; /* increased from 34px */
+  width: auto;
+}
+
+.signup-left h1 {
+  font-size: 2rem;
+  margin-bottom: 1.1rem;
+  font-family: serif;
+  color: #fff;
+  font-weight: 700;
+}
+.signup-left p {
+  font-size: 1.13rem;
+  color: #e8e5fa;
+  max-width: 280px;
+}
+
+.signup-right {
+  background: #2d1769;
+  color: #fff;
+  flex: 1.15;
+  min-width: 290px;
+  padding: 44px 36px 42px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.signup-right h2 {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+.signup-right input {
+  background: #443178;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 0.71em 1.1em;
+  margin-bottom: 13px;
+  border-radius: 7px;
+  width: 100%;
+}
+
+
+.radio-label {
+  font-size: 1em;
+  color: #e8e5fa;
+  margin: 6px 0 3px 0;
+}
+.radio-options {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 17px;
+}
+.radio-options label {
+  display: flex;
+  align-items: center;  /* Vertically center the circle and text */
+  font-size: 0.98em;
+  gap: 6px;             /* Space between circle and text */
+  color: #e6e2f9;
+  cursor: pointer;      /* Adds pointer cursor for better UX */
+}
+
+.radio-options input[type="radio"] {
+  margin: 0;            /* Remove default margin for precise positioning */
+  /* Optional: set size */
+  width: 16px;
+  height: 16px;
+}
+
+
+.primary-btn {
+  background: #e6d4ff;
+  color: #372782;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1em;
+  padding: 10px 0;
+  margin: 14px 0 6px 0;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.primary-btn:hover {
+  background: #cdb7ee;
+}
+
+.login-link {
+  font-size: 0.96em;
+  color: #bebbea;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.auth-link {
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  color: #b9aaff;
+}
+
+.social-buttons {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+.google-btn {
+  border: none;
+  background: #fff;
+  color: #352079;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  gap: 7px;
+  box-shadow: 0 1px 8px #00000013;
+  transition: background 0.1s;
+  margin-right: auto;
+}
+.google-btn:hover {
+  background: #f2efff;
+}
+.google-btn .icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 710px) {
+  .signup-card {
+    flex-direction: column;
+    width: 98vw;
+    min-width: unset;
+  }
+  .signup-left, .signup-right {
+    min-width: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 32px 6vw;
+  }
+}
+
